@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400">
+  <rect width="600" height="400" fill="#e8e0d5"/>
+  <rect x="120" y="100" width="360" height="240" rx="4" fill="#3d2c1e"/>
+  <rect x="270" y="200" width="60" height="80" fill="#5a4a3a"/>
+  <polygon points="100,100 300,20 500,100" fill="#2d4a3e"/>
+  <text x="300" y="250" text-anchor="middle" fill="#e8e0d5" font-family="Georgia, serif" font-size="18">Premium Cabin</text>
+  <text x="300" y="275" text-anchor="middle" fill="#c8c0b5" font-size="12">Coming Soon  Replace with photo</text>
+</svg>

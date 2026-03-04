@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-northwoods-cream text-northwoods-bark antialiased;
+  }
+}
+
+@layer components {
+  .prose-northwoods {
+    @apply text-northwoods-bark/90 leading-relaxed;
+  }
+}
