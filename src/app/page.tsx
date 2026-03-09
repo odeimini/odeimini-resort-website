@@ -42,7 +42,7 @@ export default function HomePage() {
               <Button
                 href={AIRBNB_LISTING_URL}
                 external
-                className="bg-white text-northwoods-pine border-white hover:bg-northwoods-cream hover:border-northwoods-cream"
+                className="bg-northwoods-bark text-white border-northwoods-bark hover:bg-northwoods-pine hover:border-northwoods-pine shadow-lg"
               >
                 View on Airbnb
               </Button>
