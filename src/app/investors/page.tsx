@@ -1,6 +1,8 @@
+import Image from "next/image";
 import {
   INVESTOR,
   SITE,
+  IMAGES,
 } from "@/content/site";
 import { SectionHeading } from "@/components/SectionHeading";
 import { Card } from "@/components/Card";
@@ -19,6 +21,23 @@ export default function InvestorsPage() {
           title="Project Overview"
           subtitle="For lenders, investors, and grantmakers. Ode'imini Resort — Native-owned lakeside development in Wisconsin."
         />
+
+        {/* Development Vision */}
+        <div className="mb-8 rounded-lg overflow-hidden border border-northwoods-sand">
+          <div className="relative aspect-[16/9]">
+            <Image
+              src={IMAGES.threeCabins}
+              alt="Three-cabin development concept at Ode'imini Resort"
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, 672px"
+              priority
+            />
+          </div>
+          <p className="p-3 text-sm text-northwoods-bark/80 bg-northwoods-cream/50">
+            Three-cabin development concept
+          </p>
+        </div>
 
         {/* Summary */}
         <Card className="p-6 mb-8">

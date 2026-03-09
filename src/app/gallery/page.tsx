@@ -20,13 +20,17 @@ export default function GalleryPage() {
             subtitle="Site photos, concept, and progress as development continues."
           />
 
-          {/* Site Photos — Real land photos */}
+          {/* Concept Imagery — AI-generated Northwoods resort vision */}
           <div className="mb-12">
             <h2 className="font-serif text-xl text-northwoods-bark mb-6">
-              Site Photos
+              Concept Imagery
             </h2>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-              {IMAGES.landPhotos.map(({ src, caption }) => (
+            <p className="prose-northwoods mb-6 text-sm text-northwoods-bark/80">
+              Vision for Ode&apos;imini Resort — cabins, waterfront, and lakeside
+              atmosphere.
+            </p>
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+              {IMAGES.propertyGallery.map(({ src, caption, alt }) => (
                 <figure
                   key={src}
                   className="rounded-lg overflow-hidden border border-northwoods-sand"
@@ -34,10 +38,10 @@ export default function GalleryPage() {
                   <div className="relative aspect-[4/3]">
                     <Image
                       src={src}
-                      alt={caption}
+                      alt={alt}
                       fill
                       className="object-cover"
-                      sizes="(max-width: 768px) 50vw, 25vw"
+                      sizes="(max-width: 768px) 50vw, 33vw"
                     />
                   </div>
                   <figcaption className="p-3 text-sm text-northwoods-bark/80 bg-northwoods-cream/50">
@@ -48,55 +52,15 @@ export default function GalleryPage() {
             </div>
           </div>
 
-          {/* Concept / Inspiration — Placeholders for future renderings */}
-          <div className="mb-12">
-            <h2 className="font-serif text-xl text-northwoods-bark mb-6">
-              Concept / Inspiration
-            </h2>
-            <p className="prose-northwoods mb-4 text-sm text-northwoods-bark/80">
-              Renderings and inspiration imagery will be added as cabin designs
-              and site plans are finalized.
-            </p>
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-              {IMAGES.gallery.slice(0, 8).map((src, i) => (
-                <div
-                  key={src}
-                  className="relative aspect-[4/3] rounded-lg overflow-hidden border border-northwoods-sand"
-                >
-                  <Image
-                    src={src}
-                    alt={`Gallery image ${i + 1} - concept or inspiration`}
-                    fill
-                    className="object-cover"
-                    sizes="(max-width: 768px) 50vw, 25vw"
-                  />
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Progress Photos — Placeholders */}
+          {/* Progress Photos — Coming Soon */}
           <div>
             <h2 className="font-serif text-xl text-northwoods-bark mb-6">
-              Progress Photos <span className="text-sm font-normal text-northwoods-bark/70">(Coming Soon)</span>
+              Progress Photos{" "}
+              <span className="text-sm font-normal text-northwoods-bark/70">
+                (Coming Soon)
+              </span>
             </h2>
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-              {IMAGES.gallery.slice(8, 12).map((src, i) => (
-                <div
-                  key={src}
-                  className="relative aspect-[4/3] rounded-lg overflow-hidden border border-northwoods-sand"
-                >
-                  <Image
-                    src={src}
-                    alt={`Gallery image ${i + 9} - progress`}
-                    fill
-                    className="object-cover"
-                    sizes="(max-width: 768px) 50vw, 25vw"
-                  />
-                </div>
-              ))}
-            </div>
-            <p className="mt-4 text-sm text-northwoods-bark/70 italic">
+            <p className="text-sm text-northwoods-bark/70 italic">
               Construction updates and progress photos will be added as
               development continues.
             </p>

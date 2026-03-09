@@ -36,7 +36,7 @@ export default function CabinsPage() {
                 <div className="relative h-64 md:h-auto md:w-1/2 md:min-h-[300px]">
                   <Image
                     src={IMAGES.standardCabin}
-                    alt="Standard cabin interior or exterior"
+                    alt="Standard cabin at Ode'imini Resort"
                     fill
                     className="object-cover"
                     sizes="(max-width: 768px) 100vw, 50vw"
@@ -78,7 +78,7 @@ export default function CabinsPage() {
                 <div className="relative h-64 md:h-auto md:w-1/2 md:min-h-[300px]">
                   <Image
                     src={IMAGES.premiumCabin}
-                    alt="Premium cabin"
+                    alt="Premium cabin at Ode'imini Resort"
                     fill
                     className="object-cover"
                     sizes="(max-width: 768px) 100vw, 50vw"

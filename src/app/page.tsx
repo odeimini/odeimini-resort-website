@@ -101,7 +101,7 @@ export default function HomePage() {
               <div className="relative h-48">
                 <Image
                   src={IMAGES.standardCabin}
-                  alt="Standard cabin exterior"
+                  alt="Standard cabin at Ode'imini Resort"
                   fill
                   className="object-cover"
                   sizes="(max-width: 768px) 100vw, 50vw"
@@ -131,7 +131,7 @@ export default function HomePage() {
               <div className="relative h-48">
                 <Image
                   src={IMAGES.premiumCabin}
-                  alt="Premium cabin exterior"
+                  alt="Premium cabin at Ode'imini Resort"
                   fill
                   className="object-cover"
                   sizes="(max-width: 768px) 100vw, 50vw"
@@ -170,6 +170,20 @@ export default function HomePage() {
             title="Our Vision"
             subtitle="Development roadmap — we're building something special."
           />
+          <figure className="mb-8 rounded-lg overflow-hidden border border-northwoods-sand">
+            <div className="relative aspect-[16/9]">
+              <Image
+                src={IMAGES.threeCabins}
+                alt="Three-cabin development concept at Ode'imini Resort"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 672px"
+              />
+            </div>
+            <figcaption className="p-3 text-sm text-northwoods-bark/80 bg-northwoods-cream/50 text-center">
+              Three-cabin development concept
+            </figcaption>
+          </figure>
           <p className="prose-northwoods mb-8 text-center">
             Ode&apos;imini Resort is in active development. Our construction plan
             includes:

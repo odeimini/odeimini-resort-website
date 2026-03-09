@@ -29,44 +29,51 @@ export const BANNER = {
   text: "Now in Development — construction updates coming soon.",
 } as const;
 
-/** Image paths — swap files in /public/images without code changes */
+/** Image paths — AI-generated concept imagery for lender-facing brochure */
 export const IMAGES = {
-  hero: "/images/land-03-cleared-view.jpg",
-  heroAlt: "Semi-cleared lakeside view at Ode'imini Resort, Northwoods Wisconsin",
-  standardCabin: "/images/cabin-standard-placeholder.svg",
-  premiumCabin: "/images/cabin-premium-placeholder.svg",
-  /** Real land/site photos for property and gallery — lender-facing */
-  landPhotos: [
+  hero: "/images/Golden-hour-lakeside-cabin.png",
+  heroAlt:
+    "Golden hour lakeside cabin at Ode'imini Resort, Northwoods Wisconsin",
+  standardCabin: "/images/single-cabin.png",
+  premiumCabin: "/images/Luxury-cabin.png",
+  /** Three-cabin development concept for property/vision sections */
+  threeCabins: "/images/three-single-cabins.png",
+  /** Dock and waterfront concept */
+  dockWaterfront: "/images/Golden-hour-dock.png",
+  /** Campfire/lifestyle atmosphere */
+  fireside: "/images/Fireside-cabin.png",
+  /** Property and gallery — AI concept images (no people) */
+  propertyGallery: [
     {
-      src: "/images/land-01-beach-hill.jpg",
-      caption: "Hill to excavate for ~100 ft beach frontage",
+      src: "/images/three-single-cabins.png",
+      caption: "Three-cabin development concept",
+      alt: "Three cabins at Ode'imini Resort, Northwoods Wisconsin",
     },
     {
-      src: "/images/land-02-cabin-area.jpg",
-      caption: "Area for cabin placement — clearing in progress",
+      src: "/images/Golden-hour-dock.png",
+      caption: "Planned dock and waterfront access",
+      alt: "Golden hour dock on the lake at Ode'imini Resort",
     },
     {
-      src: "/images/land-03-cleared-view.jpg",
-      caption: "Semi-cleared area with lake view",
+      src: "/images/single-cabin.png",
+      caption: "Standard cabin concept",
+      alt: "Standard cabin at Ode'imini Resort",
     },
     {
-      src: "/images/land-04-lakeshore-view.jpg",
-      caption: "Lakeshore and property view",
+      src: "/images/Luxury-cabin.png",
+      caption: "Premium owner cabin concept",
+      alt: "Premium cabin at Ode'imini Resort",
     },
-  ],
-  gallery: [
-    "/images/gallery/01.svg",
-    "/images/gallery/02.svg",
-    "/images/gallery/03.svg",
-    "/images/gallery/04.svg",
-    "/images/gallery/05.svg",
-    "/images/gallery/06.svg",
-    "/images/gallery/07.svg",
-    "/images/gallery/08.svg",
-    "/images/gallery/09.svg",
-    "/images/gallery/10.svg",
-    "/images/gallery/11.svg",
-    "/images/gallery/12.svg",
+    {
+      src: "/images/Fireside-cabin.png",
+      caption: "Fireside gathering atmosphere",
+      alt: "Campfire gathering at Ode'imini Resort",
+    },
+    {
+      src: "/images/Golden-hour-lakeside-cabin.png",
+      caption: "Lakeside retreat vision",
+      alt: "Golden hour lakeside cabin at Ode'imini Resort",
+    },
   ],
 } as const;
 

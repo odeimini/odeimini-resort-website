@@ -24,18 +24,17 @@ export default function PropertyPage() {
             subtitle="Lakeshore, elevation, and development plans."
           />
 
-          {/* Site Photos */}
+          {/* Concept Imagery */}
           <div className="mb-12">
             <h2 className="font-serif text-xl text-northwoods-bark mb-4">
-              Site Photos
+              Development Vision
             </h2>
             <p className="prose-northwoods mb-6">
-              Current views of the property as development progresses. These
-              photos illustrate the site&apos;s natural features and the planned
-              improvements for beach frontage, cabin placement, and lake access.
+              Concept imagery illustrating the planned cabins, waterfront, and
+              lakeside retreat experience at Ode&apos;imini Resort.
             </p>
             <div className="grid grid-cols-2 gap-4">
-              {IMAGES.landPhotos.map(({ src, caption }) => (
+              {IMAGES.propertyGallery.map(({ src, caption, alt }) => (
                 <figure
                   key={src}
                   className="rounded-lg overflow-hidden border border-northwoods-sand"
@@ -43,7 +42,7 @@ export default function PropertyPage() {
                   <div className="relative aspect-[4/3]">
                     <Image
                       src={src}
-                      alt={caption}
+                      alt={alt}
                       fill
                       className="object-cover"
                       sizes="(max-width: 768px) 50vw, 25vw"
@@ -96,11 +95,25 @@ export default function PropertyPage() {
             </p>
           </div>
 
-          {/* Dock & Safety */}
+          {/* Dock & Water Access */}
           <div className="mb-12">
             <h2 className="font-serif text-xl text-northwoods-bark mb-4">
               Dock & Water Access
             </h2>
+            <figure className="mb-4 rounded-lg overflow-hidden border border-northwoods-sand">
+              <div className="relative aspect-[16/9]">
+                <Image
+                  src={IMAGES.dockWaterfront}
+                  alt="Planned dock and waterfront at golden hour"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 672px"
+                />
+              </div>
+              <figcaption className="p-3 text-sm text-northwoods-bark/80 bg-northwoods-cream/50">
+                Planned dock and waterfront access
+              </figcaption>
+            </figure>
             <p className="prose-northwoods mb-4">{PROPERTY.dock}</p>
             <p className="text-sm text-northwoods-bark/80">
               Dock and lake safety rules will be posted on-site. Life jackets
