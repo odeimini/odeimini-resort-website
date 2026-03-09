@@ -9,7 +9,7 @@ export const SITE = {
   description:
     "4-cabin lakeside mini resort in Wisconsin. Private lakeshore, quiet cabins, Northwoods setting. Now in development.",
   email: "odeiminiresort@gmail.com",
-  baseUrl: "https://odeimini-resort-website.vercel.app",
+  baseUrl: "https://odeiminiresort.com",
 } as const;
 
 /** Placeholder — replace with your Airbnb listing URL when live */
