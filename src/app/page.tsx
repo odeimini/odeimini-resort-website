@@ -17,17 +17,26 @@ import { CTABanner } from "@/components/CTABanner";
 export default function HomePage() {
   return (
     <>
-      {/* Hero — object-contain shows full image (sky, dock, all cabins) on all devices */}
-      <section className="relative w-full h-[70vh] min-h-[400px] bg-northwoods-lake/30">
+      {/* Hero — full image visible; blurred background fills letterbox areas */}
+      <section className="relative w-full h-[70vh] min-h-[400px] overflow-hidden">
+        {/* Blurred background — same image, fills sides/top/bottom so no gray bars */}
+        <div
+          className="absolute inset-0 bg-cover bg-center scale-110"
+          style={{
+            backgroundImage: `url(${IMAGES.hero})`,
+            filter: "blur(40px)",
+          }}
+          aria-hidden
+        />
         <Image
           src={IMAGES.hero}
           alt={IMAGES.heroAlt}
           fill
-          className="object-contain"
+          className="object-contain relative z-10"
           priority
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-northwoods-bark/30 flex items-center justify-center">
+        <div className="absolute inset-0 z-20 bg-northwoods-bark/30 flex items-center justify-center">
           <div className="text-center text-white px-4 max-w-3xl">
             <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl mb-4 drop-shadow-lg">
               {SITE.name}
