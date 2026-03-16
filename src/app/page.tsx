@@ -17,13 +17,13 @@ import { CTABanner } from "@/components/CTABanner";
 export default function HomePage() {
   return (
     <>
-      {/* Hero */}
-      <section className="relative w-full h-[70vh] min-h-[400px]">
+      {/* Hero — object-contain shows full image (sky, dock, all cabins) on all devices */}
+      <section className="relative w-full h-[70vh] min-h-[400px] bg-northwoods-lake/30">
         <Image
           src={IMAGES.hero}
           alt={IMAGES.heroAlt}
           fill
-          className="object-cover"
+          className="object-contain"
           priority
           sizes="100vw"
         />
