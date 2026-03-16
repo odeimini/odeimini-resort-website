@@ -31,9 +31,9 @@ export const BANNER = {
 
 /** Image paths — AI-generated concept imagery for lender-facing brochure */
 export const IMAGES = {
-  hero: "/images/Golden-hour-lakeside-cabin.png",
+  hero: "/images/Odeimini%20Resort.png",
   heroAlt:
-    "Golden hour lakeside cabin at Ode'imini Resort, Northwoods Wisconsin",
+    "Ode'imini Resort — lakeside retreat in the Northwoods of Wisconsin",
   standardCabin: "/images/single-cabin.png",
   premiumCabin: "/images/Luxury-cabin.png",
   /** Three-cabin development concept for property/vision sections */
